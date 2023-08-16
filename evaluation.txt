@@ -1,0 +1,40 @@
+1) Initially when we clone the repository or do git pull, our project wont be having .env file so what and all
+variables present whose value is defined in .env file will become undefined. So in line 19 of index.js
+it is better to put "const PORT = process.env.PORT || 3001;" than const PORT = process.env.PORT;
+so that when process.env.PORT becomes undefined, then it will take 3001 as a value.---ok
+
+2) In getBooksById, line20, u r storing book data in a varible called personId, it doesnt make any sense.
+So many times i repeated that variables name must be appropiate an self explanatory.---ok
+
+3) if i hit http://localhost:3001/books/booksById/7 i must get response like no book found with this id but instead i am 
+getting positive response without data property. Havent tested ur code properly
+z
+4) u have created api specifically to sort in asending order only, i want to sort books in ascending as well as decending
+in a single api. The similar such functionality is already there in tutorial/nodejs branch people project,
+Can't u copy paste?
+
+5) In line number48, what is sortedArry, it must be sortedBooks. Poor naming of variables--ok
+
+6) In line number62, the status code for positive new entry creation is 201, not 200---ok
+
+7) createNewEntry Api, works for all kind of json input, there is no evaluation. If i pass an obj like below in post
+body {name: "jamy", age: 23}, this will also get added. Instead ur api must evaluate whether the given input is in properly
+structure or not with crt properties like ID, TITLE, AUTHOR, GENRE, PUBLICATION_YEAR. Even if any one is missing then
+the api should say that input data is wrong with status 400.
+
+8) In deleteRecord, line 73, u r accessing path param variable called id, but in line 11 of booksRoutes.js,
+u r not declaring it like u did in line 7 and 12 of booksRoutes.js--->i forgot this
+
+9) In editBookById, if i enter some id which doesnt exist also i am getting status 200, instead i
+must get invalid id with status 400. (same as point number 3)
+
+10) All fs functions from fs-extra will return promises, so use await before all of them like how u did in line 89.
+Like add await in line 61
+
+10) In editBookById, in response i should get the updated object, instead i am getting null
+
+11) In booksDb.json, look at id: 6, other object has id and publicationYear as numbers but this one has them as string
+
+12) rename books.js of controller folder to bookController.js
+rename booksRoutes.js in routes to bookRoutes.js
+

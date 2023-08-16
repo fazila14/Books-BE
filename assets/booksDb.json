@@ -1,0 +1,55 @@
+[
+    {
+        "id": 2,
+        "title": "the new Book ",
+        "author": "chinese noodles",
+        "genre": "Science Fiction",
+        "publicationYear": "2023",
+        "year": "2023"
+    },
+    {
+        "id": 6,
+        "title": "1984",
+        "author": "George Orwell-5",
+        "genre": "Science Fiction",
+        "publicationYear": "1999",
+        "year": "1999"
+    },
+    {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "publicationYear": 1960
+    },
+    {
+        "id": 5,
+        "title": "The Hobbit",
+        "author": "Jamesha",
+        "genre": "Fantasy",
+        "publicationYear": 1937
+    },
+    {
+        "id": 3,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "publicationYear": 1925,
+        "year": 1925
+    },
+    {
+        "id": 4,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Fiction",
+        "publicationYear": 1813
+    },
+    {
+        "id": 502,
+        "title": "chowmin",
+        "author": "chinese noodles",
+        "genre": "newone",
+        "publicationYear": "7410",
+        "shortDescription": "testing purpose"
+    }
+]

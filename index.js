@@ -24,5 +24,5 @@ app.use("/creds",userCredsRoutes);
 app.use("/user",usersRoutes);
 app.use(invalidRoutesHandler);
 
-const PORT = 3001;
+const PORT = 3001 || process.env.PORT;
 app.listen(PORT, ()=>{ console.log(`the server is listening on port ${PORT}`.bold.white) });
